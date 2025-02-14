@@ -28,18 +28,18 @@ export default function About({
     <>
       <Spacer b={border} />
       <button className="w-full group" onClick={() => setOpen(!open)}>
-        <div className=" w-full flex flex-col md:flex-row py-1 gap-3">
-          <div className="flex flex-1 md:flex-row gap-2 items-start">
+        <div className=" w-full flex flex-col md:flex-row py-1 gap-3 text-left">
+          <div className="flex flex-1 md:flex-row gap-0 items-start">
             <div className="pt-[6px]">
               <Arrow size={32} rotate={open} />
             </div>
-            <h3 className="group-hover:mx-8 transition-all duration-200 animate-fade-in">
+            <h3 className="group-hover:mx-10 transition-all duration-200 animate-fade-in">
               {headline}
             </h3>
           </div>
           <div className="flex flex-1 flex-col">
             <div className="flex-1 flex flex-row">
-              <div className="flex-1 w-full text-left text-secondary">
+              <div className="flex-1 w-full pl-1 text-secondary">
                 <small className="">{time}</small>
               </div>
               <div className="flex-1 gap-4">

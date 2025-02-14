@@ -13,8 +13,8 @@ export default function DataContainer({ data }: numbersOptions) {
         {data.map((i, index) => {
           return (
             <div key={index} className="flex flex-col gap-2">
-              <h2 className="text-display font-[100]">{i.number}</h2>
-              <small className="text-secondary uppercase pl-2">{i.subtitle}</small>
+              <div className="display font-[100]">{i.number}</div>
+              <small className="text-secondary uppercase pl-1">{i.subtitle}</small>
             </div>
           );
         })}

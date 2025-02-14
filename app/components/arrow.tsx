@@ -2,23 +2,22 @@ import React from "react";
 
 export default function Arrow({
   size,
+  thicness,
   outline,
   rotate,
 }: {
   size: number;
+  thicness?: number;
   outline?: boolean;
   rotate?: boolean;
 }) {
   return (
     <div>
       {outline ? (
-        <div
-          className={`opacity-0 w-0 group-hover:opacity-100 overflow-visible transition-all duration-200 animate-fade-in ${
-            rotate && "rotate-90"
-          }`}
-        >
+        <div className="opacity-0 w-0 group-hover:opacity-100 overflow-visible transition-all duration-200 animate-fade-in">
           <svg
             height={size}
+            transform={`${rotate && "rotate(-90)"}`}
             viewBox="0 0 98 74"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -30,9 +29,7 @@ export default function Arrow({
           </svg>
         </div>
       ) : (
-        <div
-          className={`opacity-0 w-0 group-hover:opacity-100 overflow-visible [transform-origin:50%_50%] [transform-box:fill-box] transition-all duration-200 animate-fade-in`}
-        >
+        <div className="opacity-0 w-0 group-hover:opacity-100 overflow-visible [transform-origin:50%_50%] [transform-box:fill-box] transition-all duration-200 animate-fade-in">
           <svg
             width={size}
             transform={`${rotate && "rotate(-90)"}`}
@@ -43,7 +40,7 @@ export default function Arrow({
             <path
               d="M61.5 1.5L92 35M92 35L61.5 68.5M92 35H0"
               stroke="white"
-              strokeWidth="4"
+              strokeWidth={`${thicness ? thicness : "4"}`}
             />
           </svg>
         </div>

@@ -13,9 +13,6 @@ export default {
         foreground: "var(--foreground)",
         secondary: "var(--secondary)",
       },
-      fontSize: {
-        display: "var(--display)",
-      },
       keyframes: {
         rotation: {
           from: { transform: "rotate(0deg)" },

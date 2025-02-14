@@ -12,7 +12,7 @@ export default function Nav() {
   const pathNames = paths.split("/").filter((path) => path);
   return (
     <>
-      <div className="flex flex-row justify-between w-full pb-2">
+      <div className="flex fixed top-0 flex-row justify-between bg-background w-[calc(100%-12px*2)] md:w-[calc(100%-16px*2)] pb-1">
         <Link href="/" className="flex-1">
           <div className="flex flex-1 flex-row gap-1 items-center">
             <h3>M</h3>

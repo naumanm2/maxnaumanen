@@ -31,9 +31,9 @@ export default function Work({
       <div className=" w-full flex flex-col md:flex-row py-1 gap-3">
         {address ? (
           <Link href={address} className="flex-1 cursor-pointer group">
-            <button className="flex flex-row items-center gap-2">
+            <button className="flex flex-row items-center gap-0">
               <Arrow size={32} />
-              <h3 className="group-hover:mx-8 transition-all duration-200 animate-fade-in">
+              <h3 className="group-hover:mx-10 text-left transition-all duration-200 animate-fade-in">
                 {headline}
               </h3>
             </button>
@@ -41,7 +41,7 @@ export default function Work({
         ) : (
           <h3 className="flex-1 items-center gap-0">{headline}</h3>
         )}
-        <div className="flex flex-1 flex-col md:flex-row flex-wrap text-secondary">
+        <div className="flex flex-1 flex-col md:flex-row pl-[1px] flex-wrap text-secondary">
           <div className="flex-1 flex flex-row max-md:items-center gap-2 md:gap-0 md:flex-col w-full">
             <small>{time}</small>
             {workurl && (

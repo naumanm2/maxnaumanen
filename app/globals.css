@@ -6,14 +6,11 @@
   --background: #ffffff;
   --foreground: #171717;
   --secondary: #79767a;
-  --display: clamp(6rem, 3vw, 8rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @layer utilities {
@@ -26,6 +23,12 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  .display {
+    font-size: clamp(6rem, 3vw, 8rem);
+    line-height: 100%;
+    font-weight: 300;
+  }
 }
 
 body {
@@ -37,19 +40,19 @@ body {
 h1 {
   font-size: clamp(3.3328rem, 1.7715rem + 2.8067vw, 4.9467rem);
   line-height: 1;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 h2 {
   font-size: clamp(5rem, 3.67vi + 2.33rem, 5.26rem);
   line-height: 1;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 2.5rem;
   line-height: 1;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 small,
@@ -58,14 +61,30 @@ label {
   line-height: 1.2;
 }
 
+strong,
 p {
   font-size: clamp(1.06rem, 0.34vi + 0.98rem, 1.25rem);
+  display: block;
+}
+p {
   font-weight: 400;
+}
+strong {
+  font-weight: 600;
+}
+
+p > a {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 1px;
+}
+
+p > a:hover {
+  opacity: 0.8;
 }
 
 a:hover > small {
   text-decoration: underline;
-  opacity: 0.8;
 }
 
 label {
