@@ -18,10 +18,10 @@ export default function Next({
           href={address}
           className="text-display group flex-1 flex flex-row items-center"
         >
-          <Arrow size={64} thicness={5} />
-          <h2 className="group-hover:mx-20 text-left transition-all duration-200 animate-fade-in">
+          <h2 className="text-left">
             Next
           </h2>
+          <Arrow size={64} thicness={5} />
         </Link>
       </div>
       <Spacer b={false} />

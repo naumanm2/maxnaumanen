@@ -46,9 +46,7 @@ export default function page() {
         <ImageGallery images={[valio1]} caption={""} />
 
         <Spacer b={false} />
-        <Spacer b={false} />
         <Next address={"/work/ge"} text={"Valio"} />
-        <Spacer b={false} />
         <Spacer b={false} />
       </div>
     </>

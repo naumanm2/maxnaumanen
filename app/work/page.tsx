@@ -4,7 +4,7 @@ import Work from "../components/work";
 export default function Works() {
   return (
     <>
-      <div className="pt-40 md:pt-60 flex-0 flex-1">
+      <div className="pt-40 md:pt-60 flex-1">
         <h1 className="pb-2 md:pb-4">Selected works</h1>
         <Work
           border={true}
@@ -26,6 +26,13 @@ export default function Works() {
           time={"Spring 2024"}
           tags={["ui design", "ux design"]}
           address="/work/ge"
+        />
+        <Work
+          border={true}
+          headline={"Glitcher.com"}
+          time={"2025"}
+          tags={["ui design", "development"]}
+          address="/work/glitcher"
         />
       </div>
     </>
