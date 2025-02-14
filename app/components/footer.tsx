@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <>
+    <div className="pt-24">
       <Spacer b={true} />
       <div className="w-full flex flex-row">
         <div className="flex-1 flex flex-col gap-0">
@@ -21,6 +21,6 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -8,10 +8,10 @@ export default function AboutPage() {
       <About
         headline={"TBWAHelsinki"}
         time={"2021–"}
-        tags={["UI Designer"]}
+        tags={["UI Design", "Development"]}
         border={true}
         paragraph={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "Currently, I work at TBWA\Helsinki as a Digital Designer. Have experience working in projects varying from startups to companies with revenue over 100M. I'm the only one in my role at TBWA, and I feel blessed to have had the opportunity to take on more responsibility than usual. Main responsibilities include UI/UX design, display banner production, some animation and various development tasks."
         }
       />
       <About
@@ -20,8 +20,9 @@ export default function AboutPage() {
         tags={["Information networks"]}
         border={true}
         paragraph={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          "Bachelor of Science, graduated with honors in 2020. Currently working on my masters in Digital and Social Media. GPA 4.48"
         }
+        
       />
       <Spacer b={false} />
     </div>

@@ -57,7 +57,7 @@ export default function About({
             </div>
             {open && (
               <div className="animate-emerge">
-                <p className="text-white py-4 text-left max-w-2xl">
+                <p className="text-white py-4 pl-1 text-left max-w-2xl">
                   {paragraph}
                 </p>
               </div>
