@@ -36,7 +36,7 @@ export default function Work({
           >
             <h3 className="flex-1 text-left">{headline}</h3>
             <div className="flex flex-1 flex-row">
-              <div className="flex flex-1 flex-col md:flex-row pl-[1px] flex-wrap text-secondary">
+              <div className="flex flex-1 flex-col md:flex-row gap-1 pl-[1px] flex-wrap text-secondary">
                 <div className="flex-1 flex flex-row max-md:items-center gap-2 md:gap-0 md:flex-col w-full">
                   <small>{time}</small>
                   {workurl && (
@@ -47,7 +47,7 @@ export default function Work({
                     </Link>
                   )}
                 </div>
-                <div className="flex-1 gap-4 py-1 w-full flex flex-row flex-wrap">
+                <div className="flex-1 gap-4 w-full flex flex-row flex-wrap">
                   {tags.map((tag, index) => (
                     <small className="uppercase font-medium" key={index}>
                       {tag}
@@ -78,7 +78,7 @@ export default function Work({
                     </Link>
                   )}
                 </div>
-                <div className="flex-1 gap-4 py-1 w-full flex flex-row flex-wrap">
+                <div className="flex-1 gap-4 w-full flex flex-row flex-wrap">
                   {tags.map((tag, index) => (
                     <small className="uppercase font-medium" key={index}>
                       {tag}

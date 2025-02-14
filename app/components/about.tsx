@@ -33,15 +33,15 @@ export default function About({
             <h3 className="">{headline}</h3>
           </div>
           <div className="flex flex-1 flex-row">
-            <div className="flex flex-1 flex-col">
-              <div className="flex-1 flex flex-col md:flex-row gap-0">
-                <div className="flex-1 text-secondary pl-1 flex flex-row max-md:items-center gap-2 md:gap-0 md:flex-col w-full">
+            <div className="flex flex-1 flex-col pl-[1px]">
+              <div className="flex-1 flex flex-col md:flex-row gap-1">
+                <div className="flex-1 text-secondary flex flex-row max-md:items-center gap-2 md:gap-0 md:flex-col w-full">
                   <small className="">{time}</small>
                 </div>
-                <div className="flex flex-1 flex-row flex-wrap gap-2 pl-1">
+                <div className="flex flex-1 flex-row flex-wrap gap-2">
                   {tags.map((tag, index) => (
                     <small
-                      className="pt-[6px] uppercase font-medium text-secondary"
+                      className="uppercase font-medium text-secondary"
                       key={index}
                     >
                       {tag}

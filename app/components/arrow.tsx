@@ -33,6 +33,7 @@ export default function Arrow({
           <svg
             width={size}
             transform={`${rotate ? "rotate(-90)" : "rotate(90)"}`}
+            style={{transform: rotate ? "rotate(90)" : "rotate(-90)"}}
             viewBox="0 0 94 70"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

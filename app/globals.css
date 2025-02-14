@@ -23,7 +23,6 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-
   .display {
     font-size: clamp(6rem, 3vw, 8rem);
     line-height: 100%;
@@ -89,6 +88,4 @@ a:hover > small {
 
 label {
   border-radius: 999px;
-  border: 1px solid white;
-  padding: 2px 8px 1.5px;
 }
