@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Container from "./components/container";
+import Nav from "./components/nav";
+import Footer from "./components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  weight: ["400", "900"],
   subsets: ["latin"],
 });
 
@@ -23,11 +21,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="text-[clamp(2vw,2vi+400,(1.1vw))] overflow-x-hidden no-scrollbar"
+    >
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className} antialiased`}
       >
-        {children}
+        <Container>
+          <Nav />
+          {children}
+          <Footer />
+        </Container>
       </body>
     </html>
   );

@@ -5,6 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --secondary: #79767a;
+  --display: clamp(6rem, 3vw, 8rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,8 +16,60 @@
   }
 }
 
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: clamp(3.3328rem, 1.7715rem + 2.8067vw, 4.9467rem);
+  line-height: 1;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: clamp(5rem, 3.67vi + 2.33rem, 5.26rem);
+  line-height: 1;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 300;
+}
+
+small,
+label {
+  font-size: 0.85em;
+  line-height: 1.2;
+}
+
+p {
+  font-size: clamp(1.06rem, 0.34vi + 0.98rem, 1.25rem);
+  font-weight: 400;
+}
+
+a:hover > small {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+label {
+  border-radius: 999px;
+  border: 1px solid white;
+  padding: 2px 8px 1.5px;
 }

@@ -1,0 +1,33 @@
+import React from "react";
+import Work from "../components/work";
+
+export default function Works() {
+  return (
+    <>
+      <div className="pt-40 md:pt-60 flex-1">
+        <h1 className="pb-2">Selected works</h1>
+        <Work
+          border={true}
+          headline={"Nokian Tyres"}
+          time={"2023-2024"}
+          tags={["ui design", "ux design"]}
+          address="/work/nokian-tyres"
+        />
+        <Work
+          border={true}
+          headline={"Valio"}
+          time={"Spring 2024"}
+          tags={["ui design", "ux design"]}
+          address="/work/valio"
+        />
+        <Work
+          border={true}
+          headline={"GE Healthcare"}
+          time={"Spring 2024"}
+          tags={["ui design", "ux design"]}
+          address="/work/ge"
+        />
+      </div>
+    </>
+  );
+}
