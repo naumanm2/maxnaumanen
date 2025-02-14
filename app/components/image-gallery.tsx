@@ -1,11 +1,15 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 
 export default function ImageGallery({
   images,
   half,
+  caption,
 }: {
   images: StaticImageData[];
   half?: boolean;
+  caption?: string;
 }) {
   const l = images.length;
   return (
@@ -28,6 +32,11 @@ export default function ImageGallery({
                         objectFit: "cover",
                         aspectRatio: images.length > 1 || half ? "1/1" : "2/1",
                       }}
+                      data-loaded="false"
+                      onLoad={(event) => {
+                        event.currentTarget.setAttribute("data-loaded", "true");
+                      }}
+                      className="data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10"
                     />
                   </div>
                 </div>
@@ -41,11 +50,11 @@ export default function ImageGallery({
             {images.map((i, index) => {
               return (
                 <div
-                  className="flex-1 flex flex-row justify-between"
+                  className="flex-1 flex flex-row gap-2 justify-between"
                   key={index}
                 >
                   {half && <div className="max-md:hidden flex-1"></div>}
-                  <div className="flex-1">
+                  <div className="flex-1 flex flex-col gap-2">
                     <Image
                       src={i}
                       alt=""
@@ -53,7 +62,15 @@ export default function ImageGallery({
                         objectFit: "cover",
                         aspectRatio: images.length > 1 || half ? "1/1" : "2/1",
                       }}
+                      data-loaded="false"
+                      onLoad={(event) => {
+                        event.currentTarget.setAttribute("data-loaded", "true");
+                      }}
+                      className="data-[loaded=false]:animate-pulse data-[loaded=false]:bg-background"
                     />
+                    {caption && (
+                      <small className="text-secondary">{caption}</small>
+                    )}
                   </div>
                 </div>
               );

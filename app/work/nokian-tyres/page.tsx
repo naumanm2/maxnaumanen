@@ -23,6 +23,7 @@ export default function page() {
           time={"Spring 2024"}
           tags={["ui design", "ux design"]}
           workurl="https://company.nokiantyres.com"
+          
         />
         <Spacer b={true} />
         <Text
@@ -33,7 +34,7 @@ export default function page() {
         />
         <Spacer b={false} />
 
-        <ImageGallery images={[nt2]} half={true} />
+        <ImageGallery images={[nt2]} half={true} caption="lorem"/>
         <Spacer b={false} />
         <Text
           paragraph={[

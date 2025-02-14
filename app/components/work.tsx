@@ -6,6 +6,7 @@ import logo from "@/public/logo-white.svg";
 import Image from "next/image";
 
 import arrow from "@/public/arrow.svg";
+import Arrow from "./arrow";
 
 interface workOptions {
   headline: string;
@@ -31,20 +32,7 @@ export default function Work({
         {address ? (
           <Link href={address} className="flex-1 cursor-pointer group">
             <button className="flex flex-row items-center gap-2">
-              <div className="opacity-0 w-0 overflow-visible group-hover:opacity-100 transition-all duration-200 animate-fade-in font-extralight">
-                <svg
-                  width="32"
-                  viewBox="0 0 94 70"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M61.5 1.5L92 35M92 35L61.5 68.5M92 35H0"
-                    stroke="white"
-                    stroke-width="6"
-                  />
-                </svg>
-              </div>
+              <Arrow size={32} />
               <h3 className="group-hover:mx-8 transition-all duration-200 animate-fade-in">
                 {headline}
               </h3>

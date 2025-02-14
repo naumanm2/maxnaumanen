@@ -7,11 +7,11 @@ export default function Text({
 }) {
   return (
     <>
-      <div className="flex flex-col md:flex-row gap-3">
+      <div className="flex flex-col md:flex-row gap-2">
         <div className="flex-1 pb-2">
           {headline && <h3>{headline}</h3>}
         </div>
-        <div className="flex-1 ">
+        <div className="flex-1">
           {paragraph.map((text, index) => (
             <p key={index} className="pb-2">
               {paragraph}
