@@ -44,7 +44,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(5rem, 3.67vi + 2.33rem, 5.26rem);
+  font-size: clamp(3rem, 3.67vi + 2.33rem, 5.26rem);
   line-height: 1;
   font-weight: 400;
 }
@@ -57,13 +57,13 @@ h3 {
 
 small,
 label {
-  font-size: 0.85em;
+  font-size: clamp(0.75rem, 0.34+ 0.75rem, 0.85em);
   line-height: 1.2;
 }
 
 strong,
 p {
-  font-size: clamp(1.06rem, 0.34vi + 0.98rem, 1.25rem);
+  font-size: clamp(.89rem, 0.34vi + 0.89rem, 1.25rem);
   display: block;
 }
 p {

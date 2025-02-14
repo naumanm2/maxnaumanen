@@ -45,12 +45,12 @@ export default function About({
               <div className="flex-1 gap-4">
                 <div className="flex flex-row flex-wrap gap-2">
                   {tags.map((tag, index) => (
-                    <label
-                      className="border-0 uppercase font-medium text-secondary"
+                    <small
+                      className="pt-[6px] uppercase font-medium text-secondary"
                       key={index}
                     >
                       {tag}
-                    </label>
+                    </small>
                   ))}
                 </div>
               </div>
