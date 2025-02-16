@@ -26,10 +26,16 @@ export default function About({
   const [open, setOpen] = useState(false);
   return (
     <>
-      <button className="w-full group py-5 md:py-7 border-t border-stone-600" onClick={() => setOpen(!open)}>
+      <button
+        className="w-full group py-5 md:py-7 border-t border-stone-600"
+        onClick={() => setOpen(!open)}
+      >
         <div className=" w-full flex flex-col md:flex-row gap-3 text-left">
-          <div className="flex flex-1 md:flex-row gap-0 items-start">
-            <h3 className="">{headline}</h3>
+          <div className="flex flex-1 flex-row gap-0 items-start">
+            <h3 className="flex-1">{headline}</h3>
+            <div className="md:hidden w-fit h-fit pt-2">
+              <Arrow size={32} expand={true} rotate={open} />
+            </div>
           </div>
           <div className="flex flex-1 flex-row">
             <div className="flex flex-1 flex-col pl-[1px]">
@@ -58,10 +64,10 @@ export default function About({
             </div>
             <div className="pt-[6px]">
               <div
-                className="origin-center w-fit h-fit"
+                className="max-md:hidden"
                 // style={{ transform: open ? "rotate(-90deg)" : "rotate(90deg)" }}
               >
-                <Arrow size={32} expand={true} rotate={open}/>
+                <Arrow size={32} expand={true} rotate={open} />
               </div>
             </div>
           </div>

@@ -72,10 +72,10 @@ export default function Work({
 
             <div className="flex flex-1 flex-row">
               <div className="flex flex-1 flex-col md:flex-row pl-[1px] flex-wrap text-secondary">
-                <div className="flex-1 flex flex-row max-md:items-center gap-2 md:gap-0 md:flex-col w-full">
-                  <small>{time}</small>
+                <div className="flex-1 flex flex-row max-md:items-center md:gap-0 md:flex-col w-full">
+                  <small className="pb-1 mr-2">{time}</small>
                   {workurl && (
-                    <Link href={workurl} className="pb-1">
+                    <Link href={workurl} className="pb-2">
                       <small className="underline hover:text-foreground transition-all duration-200 animate-fade-in">
                         {workurl}
                       </small>

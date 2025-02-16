@@ -5,12 +5,9 @@ import Text from "@/app/components/text";
 
 import hero from "@/public/valio/valio-hero.png";
 import valio1 from "@/public/valio/valio-1.png";
-import valio2 from "@/public/valio/valio-2.png";
 import valio3 from "@/public/valio/valio-3.png";
 import valio4 from "@/public/valio/valio-4.png";
-import valio5 from "@/public/valio/valio-5.png";
 import valio6 from "@/public/valio/valio-6.png";
-import DataContainer from "@/app/components/data-container";
 
 import background from "./background.mdx";
 import design from "./design.mdx";
@@ -46,7 +43,7 @@ export default function page() {
         <ImageGallery images={[valio1]} caption={""} />
 
         <Spacer b={false} />
-        <Next address={"/work/ge"} text={"Valio"} />
+        <Next address={"/work/ge"} text={"GE Healthcare"} />
         <Spacer b={false} />
       </div>
     </>

@@ -5,13 +5,8 @@ import Text from "@/app/components/text";
 
 import glitcher1 from "@/public/glitcher/glitcher-1.png";
 import glitcher2 from "@/public/glitcher/glitcher-2.png";
-import glitcher3 from "@/public/glitcher/glitcher-3.png";
-import glitcher4 from "@/public/glitcher/glitcher-4.png";
-import DataContainer from "@/app/components/data-container";
 
 import background from "./background.mdx";
-import design from "./design.mdx";
-import results from "./results.mdx";
 import Next from "@/app/components/next";
 
 export default function page() {
@@ -32,7 +27,7 @@ export default function page() {
         <ImageGallery images={[glitcher2]} />
 
         <Spacer b={false} />
-        <Next address={"/work/ge"} text={"glitcher"} />
+        <Next address={"/work/nokian-tyres"} text={"Nokian Tyres"} />
         <Spacer b={false} />
       </div>
     </>

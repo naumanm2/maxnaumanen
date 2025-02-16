@@ -29,6 +29,13 @@ export default function Works() {
         />
         <Work
           border={true}
+          headline={"PrimaPet"}
+          time={"Winter 2023"}
+          tags={[ "development"]}
+          address="/work/primapet"
+        />
+        <Work
+          border={true}
           headline={"Glitcher.com"}
           time={"2025"}
           tags={["ui design", "development"]}
