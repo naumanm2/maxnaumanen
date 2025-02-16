@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <div className="flex flex-1 w-full justify-start max-md:pb-16 items-end md:justify-center md:items-center ">
         <div className="max-md:hidden flex-1"></div>
-        <div className="flex-1 flex flex-col gap-2 transition-all duration-200 animate-fade-in">
+        <div className="flex-1 flex flex-col gap-2 transition-all duration-200 animate-fade-in pt-40">
           <button className="group flex flex-row items-center gap-2">
             <Arrow size={48} thicness={5} />
 
