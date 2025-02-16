@@ -27,12 +27,11 @@ export default function Work({
 }: workOptions) {
   return (
     <>
-      <Spacer b={border} />
-      <div className=" w-full flex flex-col gap-2 md:flex-row py-1 group">
-        {address ? (
+      {address ? (
+        <div className="w-full flex flex-col gap-2 md:flex-row border-t border-stone-600 group overflow-x-hidden">
           <Link
             href={address}
-            className="flex-1 flex flex-col gap-3 md:flex-row cursor-pointer "
+            className="flex-1 flex flex-col gap-3 md:flex-row cursor-pointer py-5 md:py-7"
           >
             <h3 className="flex-1 text-left">{headline}</h3>
             <div className="flex flex-1 flex-row">
@@ -60,8 +59,13 @@ export default function Work({
               </div>
             </div>
           </Link>
-        ) : (
-          <>
+        </div>
+      ) : (
+        <>
+          <div
+            className="w-full flex flex-col gap-2 md:flex-row pt-6 pb-4 group overflow-x-hidden"
+            style={{ borderTop: border ? "1px solid rgb(87,83,78)" : "none" }}
+          >
             <h3 className="flex-1 flex flex-row items-center gap-0">
               {headline}
             </h3>
@@ -87,9 +91,9 @@ export default function Work({
                 </div>
               </div>
             </div>
-          </>
-        )}
-      </div>
+          </div>
+        </>
+      )}
     </>
   );
 }

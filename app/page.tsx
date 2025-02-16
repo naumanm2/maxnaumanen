@@ -15,8 +15,8 @@ export default function Home() {
       <div className="flex flex-1 w-full justify-start max-md:pb-16 items-end md:justify-center md:items-center ">
         <div className="max-md:hidden flex-1"></div>
         <div className="flex-1 flex flex-col gap-2 transition-all duration-200 animate-fade-in">
-          <button className="group flex flex-row items-center gap-0">
-            <Arrow size={48} />
+          <button className="group flex flex-row items-center gap-2">
+            <Arrow size={48} thicness={5} />
 
             <Link href="/work">
               <h2 className="transition-all duration-200 animate-fade-in">
@@ -24,12 +24,13 @@ export default function Home() {
               </h2>
             </Link>
           </button>
-          <button className="">
-            <Link href="/about" className="group flex relative flex-row items-center gap-0">
-              <h2 className="">
-                about
-              </h2>
-              <Arrow size={48} thicness={4} />
+          <button className="group flex flex-row items-center gap-2">
+            <Arrow size={48} thicness={5} />
+            <Link
+              href="/about"
+              className="group flex relative flex-row items-center gap-0"
+            >
+              <h2 className="">about</h2>
             </Link>
           </button>
         </div>

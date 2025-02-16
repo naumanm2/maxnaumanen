@@ -19,10 +19,10 @@ export default function Nav() {
             <Image src={logo} alt="" className="animate-rotation" />
           </div>
         </Link>
-        <div className="flex flex-col gap-0 transition-colors duration-100 animate-fade-in text-end">
+        <div className="flex flex-col gap-0 text-end">
           <Link
             href="/work"
-            className={`uppercase hover:text-foreground ${
+            className={`uppercase hover:text-foreground duration-200 animate-fade-in ${
               pathNames[0] == "work" ? "text-foreground" : "text-secondary"
             }`}
           >
@@ -30,7 +30,7 @@ export default function Nav() {
           </Link>
           <Link
             href="/about"
-            className={`uppercase hover:text-foreground ${
+            className={`uppercase hover:text-foreground duration-200 animate-fade-in ${
               pathNames[0] == "about" ? "text-foreground" : "text-secondary"
             }`}
           >

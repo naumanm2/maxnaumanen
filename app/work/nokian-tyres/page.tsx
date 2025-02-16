@@ -46,9 +46,7 @@ export default function page() {
           caption="Lorem ipsum dolor sit amet"
         />
         <Spacer b={false} />
-        <Spacer b={false} />
         <Next address={"/work/valio"} text={"Valio"} />
-        <Spacer b={false} />
         <Spacer b={false} />
       </div>
     </>

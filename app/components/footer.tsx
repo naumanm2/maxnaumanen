@@ -13,10 +13,20 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col flex-1 items-end md:items-start">
-          <Link href="github.com" className="underline">
+          <Link
+            href="https://github.com/naumanm2"
+            className="underline hover:text-secondary animate-fade-in duration-200"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <small>GITHUB</small>
           </Link>
-          <Link href="github.com" className="underline">
+          <Link
+            href="https://www.linkedin.com/in/max-n-969369138"
+            className="underline hover:text-secondary animate-fade-in duration-200"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <small>LINKEDIN</small>
           </Link>
         </div>

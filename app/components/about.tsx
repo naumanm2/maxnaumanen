@@ -26,9 +26,8 @@ export default function About({
   const [open, setOpen] = useState(false);
   return (
     <>
-      <Spacer b={border} />
-      <button className="w-full group" onClick={() => setOpen(!open)}>
-        <div className=" w-full flex flex-col md:flex-row py-1 gap-3 text-left">
+      <button className="w-full group py-5 md:py-7 border-t border-stone-600" onClick={() => setOpen(!open)}>
+        <div className=" w-full flex flex-col md:flex-row gap-3 text-left">
           <div className="flex flex-1 md:flex-row gap-0 items-start">
             <h3 className="">{headline}</h3>
           </div>
@@ -51,14 +50,19 @@ export default function About({
               </div>
               {open && (
                 <div className="animate-emerge">
-                  <p className="text-white py-4 pl-1 text-left max-w-2xl">
+                  <p className="text-white py-4 md:pt-7 text-left max-w-2xl">
                     {paragraph}
                   </p>
                 </div>
               )}
             </div>
             <div className="pt-[6px]">
-              <Arrow size={32} expand={true} rotate={open} />
+              <div
+                className="origin-center w-fit h-fit"
+                // style={{ transform: open ? "rotate(-90deg)" : "rotate(90deg)" }}
+              >
+                <Arrow size={32} expand={true} rotate={open}/>
+              </div>
             </div>
           </div>
         </div>

@@ -12,16 +12,15 @@ export default function Next({
   return (
     <div>
       <Spacer b={false} />
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row items-center justify-start group">
         <div className="max-md:hidden flex-1"></div>
+        <Arrow size={48} thicness={4} />
+
         <Link
           href={address}
-          className="text-display group flex-1 flex flex-row items-center"
+          className="text-display flex-1"
         >
-          <h2 className="text-left">
-            Next
-          </h2>
-          <Arrow size={64} thicness={5} />
+          <h2 className="text-left">Next</h2>
         </Link>
       </div>
       <Spacer b={false} />

@@ -4,8 +4,8 @@ import Work from "../components/work";
 export default function Works() {
   return (
     <>
-      <div className="pt-40 md:pt-60 flex-1">
-        <h1 className="pb-2 md:pb-4">Selected works</h1>
+      <div className="pt-40 md:pt-60 flex-1 w-full overflow-x-hidden">
+        <h1 className="pb-6 md:pb-10">Selected works</h1>
         <Work
           border={true}
           headline={"Nokian Tyres"}

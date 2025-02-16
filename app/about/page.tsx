@@ -4,14 +4,14 @@ import Spacer from "../components/spacer";
 export default function AboutPage() {
   return (
     <div className="pt-40 md:pt-60 pb-2 flex-1">
-      <h1 className="pb-2 md:pb-4">Experience</h1>
+      <h1 className="pb-6 md:pb-10">Experience</h1>
       <About
-        headline={"TBWAHelsinki"}
+        headline={"TBWA\\\Helsinki"}
         time={"2021–"}
-        tags={["UI Design", "Development"]}
+        tags={["UX/UI Design", "Development"]}
         border={true}
         paragraph={
-          "Currently, I work at TBWAHelsinki as a Digital Designer. Have experience working in projects varying from startups to companies with revenue over 100M. I'm the only one in my role at TBWA, and I feel blessed to have had the opportunity to take on more responsibility than usual. Main responsibilities include UI/UX design, display banner production, some animation and various development tasks."
+          "Currently, I work at TBWA\\\Helsinki as a Digital Designer. Have experienced responsibility in projects from startups to largest companies and brands inside and outside of Finland"
         }
       />
       <About

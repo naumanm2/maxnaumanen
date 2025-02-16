@@ -14,7 +14,7 @@ export default function Arrow({
   return (
     <div>
       {!expand ? (
-        <div className="opacity-0 -mr-12 group-hover:mr-2 group-hover:opacity-100 overflow-visible [transform-origin:50%_50%] [transform-box:fill-box] transition-all duration-200 animate-fade-in">
+        <div className="opacity-0 -mr-12 group-hover:mr-2 group-hover:opacity-100 [transform-origin:50%_50%] [transform-box:fill-box] transition-all duration-200 animate-fade-in mt-2">
           <svg
             width={size}
             viewBox="0 0 94 70"
@@ -29,11 +29,11 @@ export default function Arrow({
           </svg>
         </div>
       ) : (
-        <div className="opacity-0 -mr-12 group-hover:mr-2 group-hover:opacity-100 overflow-visible [transform-origin:50%_50%] [transform-box:fill-box] transition-all duration-200 animate-fade-in">
+        <div className="opacity-0 -mr-12 group-hover:mr-2 group-hover:opacity-100 [transform-origin:50%_50%] [transform-box:fill-box] transition-all duration-200 animate-fade-in">
           <svg
             width={size}
             transform={`${rotate ? "rotate(-90)" : "rotate(90)"}`}
-            style={{transform: rotate ? "rotate(90)" : "rotate(-90)"}}
+            // style={{transform: rotate ? "rotate(90)" : "rotate(-90)"}}
             viewBox="0 0 94 70"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
