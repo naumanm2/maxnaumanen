@@ -3,7 +3,7 @@ import Spacer from "../components/spacer";
 
 export default function AboutPage() {
   return (
-    <div className="pt-40 md:pt-60 pb-2 flex-1">
+    <div className="pt-40 md:pt-60 pb-2 flex-1 overflow-x-hidden">
       <h1 className="pb-6 md:pb-10">Experience</h1>
       <About
         headline={"TBWA\\\Helsinki"}

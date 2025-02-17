@@ -12,14 +12,14 @@ export default function Nav() {
   const pathNames = paths.split("/").filter((path) => path);
   return (
     <>
-      <div className="flex fixed top-0 flex-row justify-between bg-background w-[calc(100%-12px*2)] md:w-[calc(100%-16px*2)] py-2">
+      <div className="flex fixed top-0 flex-row justify-between items-center bg-background w-[calc(100%-12px*2)] md:w-[calc(100%-16px*2)] py-2">
         <Link href="/" className="flex-1">
           <div className="flex flex-1 flex-row gap-1 items-center">
             <h3>M</h3>
             <Image src={logo} alt="" className="animate-rotation" />
           </div>
         </Link>
-        <div className="flex flex-col gap-0 text-end">
+        <div className="flex flex-col h-full justify-between text-end">
           <Link
             href="/work"
             className={`uppercase hover:text-foreground duration-200 animate-fade-in ${
