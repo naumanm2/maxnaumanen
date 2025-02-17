@@ -14,10 +14,14 @@
     "@next/mdx": "^15.1.7",
     "@types/mdx": "^2.0.13",
     "next": "15.1.7",
+    "next-sanity": "^9.8.57",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sanity": "^3.75.1",
+    "@sanity/vision": "^3.75.1"
   },
   "devDependencies": {
+    "@sanity/eslint-config-studio": "^5.0.1",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
