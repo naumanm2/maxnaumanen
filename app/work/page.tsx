@@ -1,5 +1,10 @@
 import React from "react";
 import Work from "../components/work";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Selected works",
+};
 
 export default function Works() {
   return (
@@ -31,7 +36,7 @@ export default function Works() {
           border={true}
           headline={"PrimaPet"}
           time={"Winter 2023"}
-          tags={[ "development"]}
+          tags={["development"]}
           address="/work/primapet"
         />
         <Work

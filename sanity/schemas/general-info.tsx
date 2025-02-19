@@ -1,8 +1,8 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from '@sanity-typed/types'
 
 export default defineType({
-  name: 'contactInfo',
-  title: 'Contact Information',
+  name: 'generalInfo',
+  title: 'General Information',
   type: 'document',
   fields: [
     defineField({
@@ -18,11 +18,6 @@ export default defineType({
     defineField({
       name: 'email',
       title: 'Email Address',
-      type: 'string',
-    }),
-    defineField({
-      name: 'streetAddress',
-      title: 'Street Address',
       type: 'string',
     }),
   ],

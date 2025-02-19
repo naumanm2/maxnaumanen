@@ -1,5 +1,5 @@
-import contactInfo from './contactInfo'
-import blockContent from './richText'
-import post from './show'
+import generalInfo from "./general-info";
+import richText from "./rich-text";
+import { work } from "./work";
 
-export const schemaTypes = [post, blockContent, contactInfo]
+export const schemaTypes = [work, generalInfo, richText];

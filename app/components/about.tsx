@@ -1,10 +1,5 @@
 "use client";
 
-import Spacer from "./spacer";
-
-import logo from "@/public/logo-white.svg";
-
-import Image from "next/image";
 import { useState } from "react";
 import Arrow from "./arrow";
 
@@ -21,7 +16,6 @@ export default function About({
   time,
   paragraph,
   tags,
-  border,
 }: workOptions) {
   const [open, setOpen] = useState(false);
   return (
@@ -63,10 +57,7 @@ export default function About({
               )}
             </div>
             <div className="pt-[6px]">
-              <div
-                className="max-md:hidden"
-                // style={{ transform: open ? "rotate(-90deg)" : "rotate(90deg)" }}
-              >
+              <div className="max-md:hidden">
                 <Arrow size={32} expand={true} rotate={open} />
               </div>
             </div>

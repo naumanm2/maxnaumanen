@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import logo from "@/public/logo-outline.svg";
-import { useParams, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export default function Nav() {
   const paths = usePathname();

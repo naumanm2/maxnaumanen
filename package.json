@@ -6,24 +6,31 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typegen": "sanity schema extract --path=sanity/extract.json && sanity typegen generate"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^15.1.7",
+    "@sanity-typed/types": "^7.0.1",
+    "@sanity/client": "^6.28.0",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.75.1",
     "@types/mdx": "^2.0.13",
+    "easymde": "^2.19.0",
     "next": "15.1.7",
     "next-sanity": "^9.8.57",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sanity": "^3.75.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-is": "^19.0.0",
+    "sanity": "^3.75.1",
+    "sanity-plugin-markdown": "^5.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@sanity/eslint-config-studio": "^5.0.1",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

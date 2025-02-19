@@ -1,4 +1,3 @@
-import { flushAllTraces } from "next/dist/trace";
 import React from "react";
 
 export default function Spacer({ b }: { b: boolean }) {

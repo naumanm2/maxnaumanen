@@ -2,7 +2,6 @@ import Link from "next/link";
 
 import Image from "next/image";
 
-import logo from "@/public/logo-white.svg";
 import bg from "@/public/bg.svg";
 import Arrow from "./components/arrow";
 

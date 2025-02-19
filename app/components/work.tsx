@@ -1,11 +1,5 @@
-import Spacer from "./spacer";
 import Link from "next/link";
 
-import logo from "@/public/logo-white.svg";
-
-import Image from "next/image";
-
-import arrow from "@/public/arrow.svg";
 import Arrow from "./arrow";
 
 interface workOptions {

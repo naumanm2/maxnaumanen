@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+
 import Container from "./components/container";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
@@ -12,8 +13,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "M",
-    template: "%s | M",
+    default: "* Max Naumanen",
+    template: "%s | * Max",
   },
   description:
     "UI Designer, developer",
@@ -30,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="text-[clamp(2vw,2vi+400,(1.1vw))] no-scrollbar h-full"
+      className="text-[clamp(2vw,2vi+400,(1.1vw))] no-scrollbar h-full bg-background"
     >
       <body
         className={`${inter.className} antialiased overflow-x-hidden h-full`}

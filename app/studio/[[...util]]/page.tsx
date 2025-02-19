@@ -1,7 +1,8 @@
-// ./src/app/studio/[[...tool]]/page.tsx
+// ./app/studio/[[...tool]]/page.tsx
 
 import { NextStudio } from "next-sanity/studio";
-import config from "@/sanity/sanity.config";
+import config from "@/sanity.config";
+import "easymde/dist/easymde.min.css";
 
 export const dynamic = "force-static";
 
@@ -25,5 +26,12 @@ export const viewport: Viewport = {
 };
 
 export default function StudioPage() {
-  return <NextStudio config={config} />;
+  return (
+    <>
+      <div className=" [&>*]:h-[9vh] flex-1">
+        {/* @ts-ignore */}
+        <NextStudio config={config} />
+      </div>
+    </>
+  );
 }

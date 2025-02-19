@@ -4,7 +4,7 @@ export default function Arrow({
   size,
   thicness,
   expand,
-  rotate
+  rotate,
 }: {
   size: number;
   thicness?: number;
@@ -29,11 +29,13 @@ export default function Arrow({
           </svg>
         </div>
       ) : (
-        <div className={`opacity-0 w-0 group-hover:mr-10 group-hover:opacity-100 [transform-origin:50%_50%] [transform-box:fill-box] transition-all duration-200 animate-fade-in`}>
+        <div
+          className={`opacity-0 w-0 group-hover:mr-10 group-hover:opacity-100 [transform-origin:50%_50%] [transform-box:fill-box] transition-all duration-200 animate-fade-in`}
+        >
           <svg
             height={size}
             viewBox="0 0 70 94"
-            style={{transform: rotate ? "scale(-1)" : "scale(1)"}}
+            style={{ transform: rotate ? "scale(-1)" : "scale(1)" }}
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
