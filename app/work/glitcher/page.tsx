@@ -8,6 +8,11 @@ import glitcher2 from "@/public/glitcher/glitcher-2.png";
 
 import background from "./background.mdx";
 import Next from "@/app/components/next";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Glitcher",
+};
 
 export default function page() {
   return (

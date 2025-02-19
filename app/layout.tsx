@@ -12,8 +12,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "M",
-    template: "%s | M",
+    default: "Max*",
+    template: "%s | Max*",
   },
   description:
     "UI Designer, developer",

@@ -1,5 +1,10 @@
 import React from "react";
 import Work from "../components/work";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Works",
+};
 
 export default function Works() {
   return (

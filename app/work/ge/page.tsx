@@ -10,6 +10,11 @@ import ge4 from "@/public/ge/ge-4.png";
 
 import background from "./background.mdx";
 import Next from "@/app/components/next";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "GE",
+};
 
 export default function page() {
   return (

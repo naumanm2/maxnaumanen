@@ -13,6 +13,11 @@ import background from "./background.mdx";
 import design from "./design.mdx";
 import results from "./results.mdx";
 import Next from "@/app/components/next";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Valio",
+};
 
 export default function page() {
   return (

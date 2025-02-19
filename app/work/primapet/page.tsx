@@ -5,11 +5,15 @@ import Text from "@/app/components/text";
 
 import primapet1 from "@/public/primapet/primapet-1.png";
 import primapet2 from "@/public/primapet/primapet-2.png";
-import primapet3 from "@/public/primapet/primapet-3.png";
 import primapet5 from "@/public/primapet/primapet-5.png";
 
 import background from "./background.mdx";
 import Next from "@/app/components/next";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Prima Pet",
+};
 
 export default function page() {
   return (

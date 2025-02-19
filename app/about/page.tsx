@@ -1,5 +1,10 @@
+import { Metadata } from "next";
 import About from "../components/about";
 import Spacer from "../components/spacer";
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 export default function AboutPage() {
   return (
